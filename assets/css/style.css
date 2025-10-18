@@ -161,3 +161,120 @@ form .form-control:focus {
         font-size: 1.25rem;
     }
 }
+
+/* Font Awesome icon styling (replaces Bootstrap Icons) */
+.fa-solid,
+.fa-regular,
+.fa-brands {
+    color: var(--primary-yellow);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-solid:hover,
+.fa-regular:hover,
+.fa-brands:hover {
+    color: #ffd633; /* lighter yellow on hover */
+    transform: scale(1.05);
+}
+
+/* Keep your existing icon containers for layout */
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-yellow);
+    margin-bottom: 0.5rem;
+}
+
+/* Optional: slightly smaller social media icons in circles */
+.btn .fa-brands {
+    font-size: 1.25rem;
+    vertical-align: middle;
+}
+/* Custom Button Styles */
+.btn-custom {
+    background-color: var(--primary-yellow);
+    color: var(--dark-bg);
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #ffd633;
+    color: var(--dark-bg);
+    box-shadow: 0 0 10px rgba(246, 201, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Outline variant */
+.btn-custom-outline {
+    background-color: transparent;
+    color: var(--primary-yellow);
+    border: 2px solid var(--primary-yellow);
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-outline:hover,
+.btn-custom-outline:focus {
+    background-color: var(--primary-yellow);
+    color: var(--dark-bg);
+    box-shadow: 0 0 10px rgba(246, 201, 0, 0.4);
+    transform: translateY(-2px);
+}
+/* Dark variant – contrasts well on light backgrounds */
+.btn-custom-dark {
+    background-color: var(--dark-bg);
+    color: var(--primary-yellow);
+    font-weight: 600;
+    border: 2px solid var(--dark-bg);
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-dark:hover,
+.btn-custom-dark:focus {
+    background-color: transparent;
+    color: var(--dark-bg);
+    border-color: var(--primary-yellow);
+    box-shadow: 0 0 10px rgba(246, 201, 0, 0.4);
+    transform: translateY(-2px);
+}
+/* Style inline links within paragraphs */
+p a {
+    color: var(--text-dark);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: var(--primary-yellow);
+    text-decoration: underline;
+}
+/* Contact and consultation link styling */
+#contact a,
+#consultation a[href^="mailto"],
+#consultation a[href^="tel"] {
+    color: var(--text-dark);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover,
+#consultation a[href^="mailto"]:hover,
+#consultation a[href^="tel"]:hover {
+    color: var(--primary-yellow);
+    text-decoration: underline;
+}
